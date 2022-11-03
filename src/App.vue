@@ -1,26 +1,49 @@
+<!--******************
+  TEMPLATE SECTION
+*******************-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <the-header title="RememberMe"></the-header>
+  <the-resources></the-resources>
 </template>
+<!--********************
+  END TEMPLATE SECTION
+*********************-->
 
+<!--******************
+  SCRIPT
+*******************-->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  //Import
+  import TheHeader from "./components/layouts/TheHeader";
+  import TheResources from "./components/learning-resources/TheResources";
+
+  export default {
+
+    //Register Component
+    components:{
+      TheHeader,
+      TheResources
+    },
   }
-}
 </script>
+<!--******************
+  EDN SCRIPT
+*******************-->
 
+
+<!--******************
+  STYLES
+*******************-->
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+  body{
+    font-family: "Roboto Condensed";
+    margin: 0 auto;
+  }
 </style>
+
+<!--******************
+  END STYLES
+*******************-->
