@@ -4,6 +4,7 @@
             <base-card>
                 <base-button @click="setSelectedTab('stored-resources')" :mode="storedSelected">Stored Resources</base-button>
                 <base-button @click="setSelectedTab('add-resources')" :mode="addSelected">Add Resources</base-button>
+                <div id="gitId"><a href="https://github.com/sajwebsolutions/vue-remember-me" target="_blank">View Code on GitHub</a></div>
             </base-card>
         </li>
     </ul>
@@ -96,5 +97,10 @@
         list-style-type: none;
         width: 80%;
         margin: 0 auto;
+    }
+
+    #gitId{
+        float: right;
+        margin-top: 10px;
     }
 </style>
